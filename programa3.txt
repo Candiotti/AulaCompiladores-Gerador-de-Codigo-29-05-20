@@ -1,0 +1,25 @@
+:DECLARACOES
+num:INTEIRO
+potencia:INTEIRO
+aux:INTEIRO
+resultado:INTEIRO
+:ALGORITMO
+IMPRIMIR 'Insira um numero: '
+LER num
+IMPRIMIR 'Insira a potencia: '
+LER potencia
+SE potencia = 0
+ENTAO
+   ATRIBUIR 1 A resultado
+SENAO
+   INICIO
+      ATRIBUIR num A resultado
+      ATRIBUIR 1 A aux
+      ENQUANTO aux < potencia
+         INICIO
+            ATRIBUIR resultado * num A resultado
+            ATRIBUIR aux + 1 A aux
+         FIM
+   FIM
+IMPRIMIR 'O resultado da potencia calculada e: '
+IMPRIMIR resultado
